@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support & Solutions - Jasa Setup Domain, Email, Server & Website</title>
+    <meta name="description" content="Penyedia jasa IT profesional: Setup domain, email custom domain, Synology, VPS server, website development, dan sistem backend untuk bisnis Anda.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="smooth-scroll bg-gray-50">
+    
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-server text-3xl gradient-text"></i>
+                    <span class="text-2xl font-bold gradient-text">IT Solutions</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 transition">Layanan</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">Tentang</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Kontak</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="#home" class="block text-gray-700 hover:text-purple-600 transition">Home</a>
+                <a href="#services" class="block text-gray-700 hover:text-purple-600 transition">Layanan</a>
+                <a href="#about" class="block text-gray-700 hover:text-purple-600 transition">Tentang</a>
+                <a href="#contact" class="block text-gray-700 hover:text-purple-600 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 gradient-bg">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-white mb-10 md:mb-0">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Solusi IT Profesional untuk Bisnis Anda
+                    </h1>
+                    <p class="text-xl mb-8 text-purple-100">
+                        Kami menyediakan layanan lengkap: Setup domain, email custom, server management, website development, dan sistem backend yang handal.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-center">
+                            Konsultasi Gratis
+                        </a>
+                        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition text-center">
+                            Lihat Layanan
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="float-animation">
+                        <i class="fas fa-laptop-code text-white text-9xl opacity-90"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="gradient-text">Layanan Kami</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Solusi IT komprehensif untuk mengembangkan dan mengelola infrastruktur digital bisnis Anda
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Setup Domain</h3>
+                    <p class="text-gray-600 mb-4">
+                        Registrasi, konfigurasi, dan manajemen domain untuk website bisnis Anda dengan DNS management yang optimal.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Domain registration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>DNS configuration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Domain transfer</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Email Custom Domain</h3>
+                    <p class="text-gray-600 mb-4">
+                        Setup email profesional dengan domain bisnis Anda untuk meningkatkan kredibilitas dan branding.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Google Workspace setup</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Microsoft 365 setup</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Custom mail server</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-server text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Server Management</h3>
+                    <p class="text-gray-600 mb-4">
+                        Setup dan maintenance server VPS, Synology NAS, dan infrastruktur IT untuk kebutuhan bisnis.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>VPS setup & optimization</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Synology NAS configuration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Server monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Website Development</h3>
+                    <p class="text-gray-600 mb-4">
+                        Pembuatan website profesional, responsive, dan modern untuk company profile, e-commerce, atau landing page.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Company profile</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>E-commerce website</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Custom web application</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Backend Systems</h3>
+                    <p class="text-gray-600 mb-4">
+                        Pengembangan sistem backend yang scalable, secure, dan reliable dengan teknologi modern.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>API development</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Database design</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>System integration</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">IT Support</h3>
+                    <p class="text-gray-600 mb-4">
+                        Dukungan teknis profesional untuk menjaga sistem IT bisnis Anda berjalan lancar 24/7.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Technical support</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>System maintenance</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <div class="absolute inset-0 gradient-bg rounded-2xl transform rotate-6"></div>
+                        <div class="relative bg-white p-8 rounded-2xl shadow-xl">
+                            <i class="fas fa-chart-line text-6xl gradient-text mb-4"></i>
+                            <h3 class="text-3xl font-bold mb-4 text-gray-800">Mengapa Memilih Kami?</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Profesional & Berpengalaman</h4>
+                                        <p class="text-gray-600">Tim ahli dengan pengalaman bertahun-tahun</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Harga Kompetitif</h4>
+                                        <p class="text-gray-600">Solusi terbaik dengan harga yang terjangkau</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Support 24/7</h4>
+                                        <p class="text-gray-600">Siap membantu kapan saja Anda membutuhkan</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">Teknologi Terkini</h4>
+                                        <p class="text-gray-600">Menggunakan tools dan framework modern</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        <span class="gradient-text">Tentang Kami</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Kami adalah penyedia layanan IT profesional yang berfokus pada solusi infrastruktur digital untuk bisnis. Dengan pengalaman dan keahlian yang mendalam, kami membantu bisnis dari berbagai skala untuk membangun, mengelola, dan mengoptimalkan sistem IT mereka.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Dari setup domain dan email bisnis, hingga pengembangan website dan sistem backend yang kompleks, kami siap menjadi partner IT terpercaya untuk kesuksesan bisnis Anda.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-6 mt-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold gradient-text mb-2">100+</div>
+                            <div class="text-gray-600">Klien</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold gradient-text mb-2">500+</div>
+                            <div class="text-gray-600">Proyek</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold gradient-text mb-2">5+</div>
+                            <div class="text-gray-600">Tahun</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="gradient-text">Hubungi Kami</span>
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Siap untuk memulai proyek IT Anda? Hubungi kami untuk konsultasi gratis
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nama</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nomor Telepon</label>
+                            <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Layanan yang Dibutuhkan</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition">
+                                <option>Setup Domain</option>
+                                <option>Email Custom Domain</option>
+                                <option>Server Management (VPS/Synology)</option>
+                                <option>Website Development</option>
+                                <option>Backend Systems</option>
+                                <option>IT Support</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Pesan</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500 transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full gradient-bg text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-xl mb-2">Alamat</h3>
+                            <p class="text-gray-600">Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-xl mb-2">Telepon</h3>
+                            <p class="text-gray-600">+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-xl mb-2">Email</h3>
+                            <p class="text-gray-600">info@itsolutions.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-clock text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-xl mb-2">Jam Operasional</h3>
+                            <p class="text-gray-600">Senin - Jumat: 09:00 - 18:00</p>
+                            <p class="text-gray-600">Sabtu: 09:00 - 15:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6">
+                        <h3 class="font-bold text-gray-800 text-xl mb-4">Ikuti Kami</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                                <i class="fab fa-facebook-f text-white text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                                <i class="fab fa-instagram text-white text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                                <i class="fab fa-linkedin-in text-white text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-server text-3xl"></i>
+                        <span class="text-2xl font-bold">IT Solutions</span>
+                    </div>
+                    <p class="text-purple-100">
+                        Solusi IT profesional untuk kesuksesan bisnis Anda.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-purple-100">
+                        <li><a href="#services" class="hover:text-white transition">Setup Domain</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Email Custom</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Server Management</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Website Development</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Perusahaan</h4>
+                    <ul class="space-y-2 text-purple-100">
+                        <li><a href="#about" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Kontak</a></li>
+                        <li><a href="#" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Newsletter</h4>
+                    <p class="text-purple-100 mb-4">Dapatkan update terbaru dari kami</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Anda" class="flex-1 px-4 py-2 rounded-l-lg text-gray-800 focus:outline-none">
+                        <button type="submit" class="bg-white text-purple-600 px-4 py-2 rounded-r-lg font-semibold hover:bg-gray-100 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-purple-400 pt-8 text-center text-purple-100">
+                <p>&copy; 2024 IT Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
