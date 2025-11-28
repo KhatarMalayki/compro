@@ -121,8 +121,8 @@ Edit section services di `index.html` dan tambah/hapus card sesuai kebutuhan.
 
 Untuk pertanyaan atau dukungan, hubungi:
 
-- Email: info@itsolutions.com
-- Phone: +62 812-3456-7890
+- Email: khatarmalayki21@gmail.com
+- Phone: +62 895364520814
 
 ## 📄 License
 
@@ -131,3 +131,4 @@ Untuk pertanyaan atau dukungan, hubungi:
 ---
 
 **Dibuat dengan ❤️ untuk kesuksesan bisnis Anda**
+
